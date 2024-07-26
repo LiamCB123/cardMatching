@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="assign2.css">
+    <script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <h1>Assignment 2 | Matching Cards</h1>
+    <div class="temp1">
+        <p>Click on any two cards to flip them over and try to match images and earn a point each until all pairs are found (6 points total)</p>
+    </div>
+    <div class="containter ">
+        
+        <div class="ScoreBox bg-primary mb-3">
+            <h2>Score</h2>
+            <p id="scoreCount">Current Score: 0</p>
+        </div>
+        <div class="Timer bg-success">
+            <h2>Timer</h2>
+            <p id="timerCount">Time: 0</p>
+        </div>
+    </div>
+    <div class="button1">
+        <button id="Start" onclick="hide(this); startGame()" class="btn btn-warning">Start Game</button>
+    </div>
+    <div id="game-board" class="row justify-content-center"></div>
+    <div class="button2">
+        <button id="Restart" style="visibility: hidden;" class="btn btn-danger" onclick="restart()">Restart</button>
+    </div>
+    
+    
+    
+    <script src="assign2.js"></script>
+</body>
+</html>
